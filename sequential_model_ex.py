@@ -6,8 +6,8 @@ from keras.layers import Dense, Activation
 model = Sequential()
 
 model.add(Dense(10, input_dim=15,activation='relu'))
-
-#model.summary()
+model.add(Dense(20, activation='sigmoid'))
+model.summary()
 
 #SVG(model_to_dot(model).create(prog='dot',format='avg'))
 
