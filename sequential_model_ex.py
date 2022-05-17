@@ -7,7 +7,9 @@ model = Sequential()
 
 model.add(Dense(10, input_dim=15,activation='relu'))
 model.add(Dense(20, activation='sigmoid'))
-model.summary()
+
+model.compile(optimizer="rmsprop",loss= "binary_crossentropy", metrics=["accuracy"]) 
+#model.summary()
 
 #SVG(model_to_dot(model).create(prog='dot',format='avg'))
 
