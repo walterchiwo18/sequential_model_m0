@@ -32,6 +32,10 @@ model.fit(
 
 #model.summary()
 
+model.predict(
+    data, 
+    batch_size=32, 
+    verbose=1)
 
 
 #SVG(model_to_dot(model).create(prog='dot',format='avg'))
